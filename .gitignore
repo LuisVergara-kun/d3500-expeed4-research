@@ -1,0 +1,45 @@
+# ============================================================
+#  RED DE SEGURIDAD — nunca versionar material propietario.
+#  La primera barrera es que esta carpeta SOLO contenga archivos
+#  limpios. Esto es la segunda barrera, por si acaso.
+# ============================================================
+
+# Firmware, dumps y binarios (de Nikon o derivados)
+*.bin
+*.BIN
+*.dec
+*.lib
+*.dll
+*.pyd
+
+# Strings / tablas / claves extraídas de la ROM
+*_strings.txt
+*deviceinfo*.bin
+hdr_*.bin
+ram_*.bin
+key*.json
+*key_all*.json
+
+# Carpetas sensibles (si alguna vez se copian aquí por error)
+D5600_firmware/
+D7200_firmware/
+ui_assets/
+claves_publicas/
+bin_iso_unlock/
+mapa_interfaz/
+herramientas/
+
+# Entorno Python / temporales
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Borradores de lanzamiento (material de marketing, no parte del repo público)
+launch/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
